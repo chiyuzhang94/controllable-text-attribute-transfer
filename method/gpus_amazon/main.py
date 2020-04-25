@@ -63,7 +63,7 @@ if torch.cuda.is_available():
 # If GPU is availble, the model will train on GPU.
 if torch.cuda.is_available():
     device_ids = GPUtil.getAvailable(limit = 4)
-
+global device
 device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
 # args.if_load_from_checkpoint = True
 # args.checkpoint_name = "1557668663"
@@ -240,8 +240,7 @@ def eval_iters(ae_model, dis_model):
 
 if __name__ == '__main__':
     preparation()
-    global device
-    device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
+    # device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
 
     ae_model = make_model(d_vocab=args.vocab_size,
                                    N=args.num_layers_AE,
