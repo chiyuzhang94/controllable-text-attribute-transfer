@@ -135,9 +135,9 @@ def train_iters(ae_model, dis_model):
     ae_model.train()
     dis_model.train()
 
-    ae_optimizer = NoamOpt(ae_model.src_embed[0].d_model, 1, 2000,
-                           torch.optim.Adam(ae_model.parameters(), lr=0, betas=(0.9, 0.98), eps=1e-9))
-    dis_optimizer = torch.optim.Adam(dis_model.parameters(), lr=0.0001)
+    ae_optimizer = NoamOpt(ae_model.module.src_embed[0].d_model, 1, 2000,
+                           torch.optim.Adam(ae_model.module.parameters(), lr=0, betas=(0.9, 0.98), eps=1e-9))
+    dis_optimizer = torch.optim.Adam(dis_model.module.parameters(), lr=0.0001)
 
     ae_criterion = get_cuda(LabelSmoothing(size=args.vocab_size, padding_idx=args.id_pad, smoothing=0.1),device)
     dis_criterion = nn.BCELoss(size_average=True)
@@ -186,8 +186,8 @@ def train_iters(ae_model, dis_model):
             '| end of epoch {:3d} | time: {:5.2f}s |'.format(
                 epoch, (time.time() - epoch_start_time)))
         # Save model
-        torch.save(ae_model.state_dict(), args.current_save_path + 'ae_model_params.pkl')
-        torch.save(dis_model.state_dict(), args.current_save_path + 'dis_model_params.pkl')
+        torch.save(ae_model.module.state_dict(), args.current_save_path + 'ae_model_params.pkl')
+        torch.save(dis_model.module.state_dict(), args.current_save_path + 'dis_model_params.pkl')
     return
 
 def eval_iters(ae_model, dis_model):
