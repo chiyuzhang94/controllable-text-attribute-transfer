@@ -240,7 +240,7 @@ class EncoderDecoder(nn.Module):
         # latent = self.memory2latent(memory)
         # memory = self.latent2memory(latent)  # (batch_size, max_src_seq, d_model)
 
-        logit = self.decode(latent.unsqueeze(1), tgt, tgt_mask)  # (batch_size, max_tgt_seq, d_model)
+        logit = self.decode(latent.unsqueeze(1), tgt, tgt_mask,device)  # (batch_size, max_tgt_seq, d_model)
         prob = self.generator(logit)  # (batch_size, max_seq, vocab_size)
         return latent, prob
 
@@ -249,14 +249,14 @@ class EncoderDecoder(nn.Module):
     def encode(self, src, src_mask):
         return self.encoder(self.src_embed(src), src_mask)
 
-    def decode(self, memory, tgt, tgt_mask):
+    def decode(self, memory, tgt, tgt_mask, device):
         # memory: (batch_size, 1, d_model)
         src_mask = get_cuda(torch.ones(memory.size(0), 1, 1).long(),device)
         # print("src_mask here", src_mask)
         # print("src_mask", src_mask.size())
         return self.decoder(self.tgt_embed(tgt), memory, src_mask, tgt_mask)
 
-    def greedy_decode(self, latent, max_len, start_id):
+    def greedy_decode(self, latent, max_len, start_id, device):
         '''
         latent: (batch_size, max_src_seq, d_model)
         src_mask: (batch_size, 1, max_src_len)
@@ -271,7 +271,7 @@ class EncoderDecoder(nn.Module):
             # print("="*10, i)
             # print("ys", ys.size())  # (batch_size, i)
             # print("tgt_mask", subsequent_mask(ys.size(1)).size())  # (1, i, i)
-            out = self.decode(latent.unsqueeze(1), to_var(ys), to_var(subsequent_mask(ys.size(1)).long()))
+            out = self.decode(latent.unsqueeze(1), to_var(ys), to_var(subsequent_mask(ys.size(1)).long()),device)
             prob = self.generator(out[:, -1])
             # print("prob", prob.size())  # (batch_size, vocab_size)
             _, next_word = torch.max(prob, dim=1)
@@ -462,7 +462,7 @@ def fgim_attack(model, origin_data, target, ae_model, max_sequence_length, id_bo
 
             generator_id = ae_model.greedy_decode(data,
                                                     max_len=max_sequence_length,
-                                                    start_id=id_bos)
+                                                    start_id=id_bos,device, device)
             generator_text = id2text_sentence(generator_id[0], id_to_word)
             print("| It {:2d} | dis model pred {:5.4f} |".format(it, output[0].item()))
             print(generator_text)

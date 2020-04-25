@@ -164,7 +164,7 @@ class non_pair_data_loader():
         self.vocab_size = vocab_size
 
 
-    def create_batches(self, train_file_list, train_label_list, if_shuffle=True):
+    def create_batches(self, train_file_list, train_label_list, if_shuffle=True, device):
         self.data_label_pairs = []
         for _index in range(len(train_file_list)):
             with open(train_file_list[_index]) as fin:
