@@ -130,7 +130,7 @@ def train_iters(ae_model, dis_model):
         id_eos=args.id_eos, id_unk=args.id_unk,
         max_sequence_length=args.max_sequence_length, vocab_size=args.vocab_size
     )
-    train_data_loader.create_batches(args.train_file_list, args.train_label_list, if_shuffle=True, device)
+    train_data_loader.create_batches(args.train_file_list, args.train_label_list, device, if_shuffle=True)
     add_log("Start train process.")
     ae_model.train()
     dis_model.train()
@@ -204,7 +204,7 @@ def eval_iters(ae_model, dis_model):
         [0],
         [1],
     ]
-    eval_data_loader.create_batches(eval_file_list, eval_label_list, if_shuffle=False, device)
+    eval_data_loader.create_batches(eval_file_list, eval_label_list,device, if_shuffle=False)
     gold_ans = load_human_answer(args.data_path)
     assert len(gold_ans) == eval_data_loader.num_batch
 
