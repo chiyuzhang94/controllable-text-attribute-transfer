@@ -240,6 +240,7 @@ def eval_iters(ae_model, dis_model):
 
 if __name__ == '__main__':
     preparation()
+    global device
     device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
 
     ae_model = make_model(d_vocab=args.vocab_size,
