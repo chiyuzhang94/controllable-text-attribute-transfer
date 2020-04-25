@@ -179,7 +179,7 @@ def train_iters(ae_model, dis_model):
                 print(id2text_sentence(tensor_tgt_y[0], args.id_to_word))
                 generator_text = ae_model.greedy_decode(latent,
                                                         max_len=args.max_sequence_length,
-                                                        start_id=args.id_bos, device)
+                                                        start_id=args.id_bos, device = device)
                 print(id2text_sentence(generator_text[0], args.id_to_word))
 
         add_log(
@@ -224,7 +224,7 @@ def eval_iters(ae_model, dis_model):
         latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask)
         generator_text = ae_model.greedy_decode(latent,
                                                 max_len=args.max_sequence_length,
-                                                start_id=args.id_bos, device)
+                                                start_id=args.id_bos, device = device)
         print(id2text_sentence(generator_text[0], args.id_to_word))
 
         # Define target label
