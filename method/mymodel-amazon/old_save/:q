@@ -1,0 +1,7 @@
+==> This is a directory, showing the output of ls -lA 1557668663/
+total 69323
+-rw-r----- 1 chiyu94 chiyu94 70605305 Mar  5 19:38 ae_model_params.pkl
+-rw-r----- 1 chiyu94 chiyu94   124322 Mar  5 19:38 dis_model_params.pkl
+-rw-r----- 1 chiyu94 chiyu94   377130 Mar  5 19:38 log_2019_05_12_21_44_23.txt
+-rw-r----- 1 chiyu94 chiyu94       73 Mar  5 19:38 log_2019_05_14_18_36_05.txt
+-rw-r----- 1 chiyu94 chiyu94   107034 Mar  5 19:38 log_2019_05_14_18_37_28.txt

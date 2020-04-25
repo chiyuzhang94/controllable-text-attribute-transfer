@@ -4,28 +4,28 @@
 <EOS>
 .	588918
 the	355266
-i	287264
-it	232400
+i	287271
+it	232406
 ,	224875
 and	205651
 a	182660
 to	177205
 this	133994
-is	120774
+is	120775
 for	103715
 of	100596
 my	82246
 in	75535
-that	67515
+that	67516
 not	63493
 with	60903
 you	60633
 have	59799
-t	58743
+t	58762
 on	57845
 but	56768
 was	54070
-s	40996
+s	41008
 num_num	39488
 one	39452
 as	39156
@@ -37,7 +37,7 @@ be	31309
 like	31307
 just	30085
 use	29832
-can	29081
+can	29083
 num_extend	28162
 if	27287
 all	27250
@@ -49,14 +49,14 @@ or	24285
 would	23748
 great	23649
 out	23427
-good	23095
+good	23096
 when	21953
 them	21681
 will	21525
 up	21448
 well	21342
 from	20526
-no	20327
+no	20328
 get	19832
 product	19222
 me	18839
@@ -69,7 +69,7 @@ bought	17238
 your	17057
 time	16663
 do	16324
-don	16288
+don	16295
 an	16269
 really	15930
 we	15614
@@ -82,12 +82,12 @@ used	14970
 what	14602
 also	14461
 too	14414
-ve	14163
-even	14053
+ve	14166
+even	14054
 work	13216
 because	12897
 case	12805
-does	12795
+does	12796
 easy	12674
 some	12273
 better	12055
@@ -95,7 +95,7 @@ works	11999
 off	11896
 any	11806
 first	11714
-m	11623
+m	11627
 now	11545
 am	11491
 little	11485
@@ -119,18 +119,18 @@ then	9466
 by	9428
 back	9166
 years	9109
-didn	8981
+didn	8985
 nice	8792
 its	8597
 could	8344
-doesn	8280
+doesn	8282
 way	8275
 small	7854
 never	7802
 put	7801
 how	7784
 coffee	7675
-thing	7671
+thing	7672
 fit	7528
 size	7457
 think	7357
@@ -138,12 +138,12 @@ tried	7287
 few	7246
 new	7229
 into	7220
-need	7157
+need	7158
 again	7134
 recommend	7124
 purchased	7024
 long	7008
-before	6923
+before	6924
 same	6917
 another	6913
 go	6869
@@ -157,7 +157,7 @@ makes	6433
 enough	6429
 best	6372
 lot	6338
-perfect	6292
+perfect	6293
 old	6289
 while	6287
 last	6227
@@ -183,7 +183,7 @@ day	5656
 around	5648
 looks	5619
 their	5603
-she	5582
+she	5583
 looking	5567
 pretty	5561
 every	5550
@@ -204,8 +204,8 @@ thought	5117
 :	5115
 take	5100
 far	5084
+ll	5042
 item	5042
-ll	5041
 big	4967
 easily	4966
 pan	4934
@@ -288,7 +288,7 @@ high	3367
 days	3343
 brand	3326
 took	3324
-here	3308
+here	3309
 received	3305
 where	3272
 ago	3230
@@ -333,7 +333,7 @@ expensive	2776
 piece	2766
 disappointed	2757
 cooking	2750
-working	2746
+working	2747
 hours	2722
 car	2704
 home	2702
@@ -355,7 +355,7 @@ etc	2545
 week	2540
 gets	2528
 wasn	2523
-let	2516
+let	2517
 power	2514
 oil	2506
 instead	2497
@@ -366,12 +366,12 @@ next	2468
 end	2461
 must	2459
 trying	2451
+extra	2447
 glass	2446
-extra	2446
 real	2435
-else	2424
+else	2425
 return	2398
-couldn	2384
+couldn	2385
 help	2380
 dry	2378
 replacement	2374
@@ -457,9 +457,9 @@ company	1961
 completely	1961
 larger	1961
 sharp	1960
+needs	1953
 free	1953
 maker	1953
-needs	1952
 plus	1951
 add	1939
 steel	1932
@@ -507,7 +507,7 @@ tell	1741
 daughter	1735
 rubber	1731
 simply	1730
-stainless	1719
+stainless	1720
 cord	1712
 save	1711
 shipping	1708
@@ -518,7 +518,7 @@ sometimes	1681
 often	1677
 cups	1675
 goes	1668
-remove	1667
+remove	1668
 pleased	1665
 usually	1663
 soft	1662
@@ -532,8 +532,8 @@ says	1637
 run	1635
 kids	1634
 point	1632
+touch	1630
 space	1630
-touch	1629
 between	1627
 keeps	1616
 solid	1614
@@ -631,13 +631,13 @@ front	1308
 shape	1306
 baking	1305
 decent	1302
+colors	1295
 meat	1294
-colors	1294
 playing	1293
 microwave	1290
+finish	1288
 pressure	1288
 dogs	1287
-finish	1287
 blue	1286
 played	1282
 due	1281
@@ -735,8 +735,8 @@ available	1103
 protect	1101
 base	1098
 built	1097
+normal	1096
 hoping	1095
-normal	1095
 otterbox	1092
 running	1091
 bigger	1087
@@ -789,7 +789,7 @@ dust	1008
 stop	1005
 rest	1002
 gone	1000
-chocolate	997
+chocolate	998
 tastes	996
 beat	996
 called	995
@@ -806,8 +806,8 @@ mess	974
 added	974
 okay	973
 nearly	971
-test	969
-voice	965
+test	970
+voice	966
 switch	962
 mix	960
 junk	959
@@ -854,7 +854,7 @@ floor	889
 controls	889
 opinion	887
 install	884
-holding	881
+holding	882
 edges	880
 coming	880
 description	879
@@ -948,11 +948,11 @@ luck	770
 refund	770
 adapter	770
 mostly	769
+french	769
 covers	769
 changed	769
 table	769
 deep	768
-french	768
 jars	768
 inch	767
 happened	767
@@ -1029,8 +1029,8 @@ likes	706
 result	706
 convenient	706
 everyday	705
+fix	705
 construction	704
-fix	704
 travel	702
 potatoes	701
 poorly	700
@@ -1111,8 +1111,8 @@ future	647
 actual	645
 pitcher	645
 scoop	643
+baby	641
 unlike	640
-baby	640
 shipped	639
 lasts	639
 pc	639
@@ -1200,9 +1200,9 @@ mini	580
 average	579
 evo	578
 mom	576
+settings	575
 chef	575
 tape	574
-settings	574
 website	574
 user	574
 taken	573
@@ -1319,8 +1319,8 @@ realize	518
 fabric	517
 apparently	517
 alot	516
+plantronics	516
 disappointment	515
-plantronics	515
 waffle	515
 bars	513
 classic	513
@@ -1363,9 +1363,9 @@ waiting	494
 connected	494
 site	494
 bulk	493
+bike	492
 rough	492
 fridge	492
-bike	491
 didnt	490
 asked	490
 fault	490
@@ -1444,11 +1444,11 @@ ran	460
 hopes	460
 dock	460
 tasting	459
+u	459
 ten	459
 cloth	459
 example	459
 driving	458
-u	458
 wore	458
 protective	457
 listen	457
@@ -1549,10 +1549,10 @@ rated	420
 learn	420
 bring	420
 clips	420
+weren	420
 rid	420
 generally	420
 concerned	419
-weren	419
 current	418
 adds	418
 intended	417
@@ -1624,8 +1624,8 @@ static	392
 cars	392
 ways	392
 linksys	391
+answer	390
 socks	390
-answer	389
 period	389
 spring	389
 grips	389
@@ -1684,12 +1684,12 @@ experienced	374
 thats	374
 themselves	374
 sucks	374
+final	374
 shop	373
 selling	373
 drying	373
 step	373
 boiling	373
-final	373
 therefore	372
 via	372
 grease	372
@@ -1743,15 +1743,15 @@ miss	358
 lift	358
 fail	358
 quart	358
+die	357
+jack	357
 coat	357
 gps	357
 accessories	356
-die	356
 smelled	356
 further	356
 insert	356
 ports	356
-jack	356
 switched	355
 response	355
 initially	355
@@ -1773,12 +1773,12 @@ changes	351
 burning	350
 watching	350
 serve	350
+age	349
 players	349
 gun	349
 wheel	349
 ahead	349
 constructed	349
-age	348
 narrow	348
 cutter	348
 pie	348
@@ -2158,6 +2158,7 @@ jeans	265
 sprint	265
 flawlessly	265
 hadn	264
+chemicals	264
 bits	263
 nintendo	263
 pros	263
@@ -2166,7 +2167,6 @@ overnight	263
 states	263
 screens	263
 burnt	263
-chemicals	263
 lg	263
 tons	262
 corelle	262
@@ -2310,6 +2310,7 @@ measurements	236
 fruits	236
 compliments	236
 underneath	235
+rock	235
 reset	235
 tends	235
 weapons	235
@@ -2317,7 +2318,6 @@ thoroughly	235
 burner	235
 firmware	234
 crystal	234
-rock	234
 tossed	234
 mario	234
 girl	234
@@ -2336,6 +2336,7 @@ gluten	232
 tomatoes	232
 wrote	232
 decide	232
+n	232
 vehicle	232
 scrub	232
 count	232
@@ -2359,7 +2360,6 @@ tries	229
 sweat	229
 knowing	229
 women	229
-n	229
 fiesta	229
 mascara	228
 jerky	228
@@ -2397,12 +2397,12 @@ tooth	224
 describe	224
 copy	224
 efficient	224
+reduce	224
 sooner	224
 failure	223
 soak	223
 output	223
 coverage	223
-reduce	223
 primarily	223
 mold	223
 till	222
@@ -2443,6 +2443,7 @@ fails	218
 inner	218
 downside	218
 gallon	218
+vitamin	217
 core	217
 leg	217
 tree	217
@@ -2451,7 +2452,6 @@ purchases	217
 report	217
 installing	216
 b	216
-vitamin	216
 tab	216
 makeup	216
 jump	216
@@ -2474,6 +2474,7 @@ extension	214
 considered	213
 alarm	213
 monitor	213
+allowed	213
 fold	213
 includes	213
 picky	213
@@ -2483,7 +2484,6 @@ rubberized	213
 contain	212
 abuse	212
 reviewed	212
-allowed	212
 individual	212
 softer	212
 tag	212
@@ -2847,6 +2847,7 @@ breads	173
 win	173
 files	173
 mediocre	173
+staying	173
 searched	173
 doctor	173
 boiled	173
@@ -2857,7 +2858,6 @@ mice	172
 busy	172
 monster	172
 policy	172
-staying	172
 training	172
 grain	172
 collect	172
@@ -2927,12 +2927,12 @@ rounded	166
 town	165
 department	165
 garden	165
+hat	165
 media	165
 lightly	165
 impact	165
 file	164
 grass	164
-hat	164
 detail	164
 disk	164
 shoulder	164
@@ -2998,6 +2998,7 @@ tighten	159
 percolator	159
 boyfriend	159
 leftovers	159
+moderate	158
 cumbersome	158
 labeled	158
 reports	158
@@ -3018,7 +3019,6 @@ served	158
 minimum	158
 nowhere	158
 allergies	158
-moderate	157
 dress	157
 sign	157
 fear	157
@@ -3027,6 +3027,7 @@ golden	157
 connections	157
 qt	157
 among	157
+holiday	157
 heel	157
 seams	156
 female	156
@@ -3044,7 +3045,6 @@ brushed	156
 solidly	156
 muffin	156
 thermal	156
-holiday	156
 enjoying	156
 oster	156
 chops	156
@@ -3198,6 +3198,7 @@ weighs	145
 riding	145
 spatulas	145
 flap	145
+universal	145
 rugs	145
 biscuits	145
 trent	145
@@ -3217,7 +3218,6 @@ enjoyable	144
 shortly	144
 soapy	144
 commuter	144
-universal	144
 team	143
 occasions	143
 gorgeous	143
@@ -3536,6 +3536,7 @@ talked	124
 storyline	124
 resistance	124
 arrival	124
+ignore	124
 inserts	124
 supplements	124
 worries	124
@@ -3550,7 +3551,6 @@ meaning	123
 grills	123
 rocks	123
 commands	123
-ignore	123
 reviewing	123
 discount	123
 salty	123
@@ -3585,6 +3585,7 @@ convection	121
 brings	121
 precise	121
 bucket	121
+em	121
 drips	121
 fluffy	121
 approximately	121
@@ -3604,7 +3605,6 @@ deeper	120
 unnecessary	120
 marketing	120
 letters	120
-em	120
 dealing	120
 soaking	120
 suit	120
@@ -3752,6 +3752,7 @@ hangs	112
 saucepan	112
 vinyl	112
 substitute	112
+`	112
 boom	112
 boat	111
 portions	111
@@ -3831,6 +3832,7 @@ slippers	108
 encountered	108
 swivel	108
 mins	108
+chicago	108
 madden	108
 rusting	108
 ft	108
@@ -3852,7 +3854,6 @@ aa	107
 environments	107
 bottoms	107
 handed	107
-chicago	107
 hub	107
 cube	107
 sealing	107
@@ -4012,6 +4013,7 @@ molded	100
 concrete	100
 pathetic	100
 confidence	100
+west	100
 diamond	100
 classy	100
 sensitivity	100
@@ -4042,7 +4044,6 @@ anticipated	99
 textured	99
 gap	99
 loads	99
-west	99
 hungry	99
 demo	99
 plunger	99
@@ -4053,6 +4054,7 @@ disconnect	99
 bacteria	99
 simplicity	99
 rope	99
+root	99
 neatly	99
 envelope	98
 glow	98
@@ -4081,7 +4083,6 @@ ergonomic	98
 deciding	98
 mandoline	98
 expense	98
-root	98
 pod	98
 shakes	97
 configuration	97
@@ -4114,6 +4115,7 @@ jewelry	97
 scary	96
 activate	96
 expired	96
+moisturizing	96
 flavorful	96
 dud	96
 coloring	96
@@ -4133,7 +4135,6 @@ flame	96
 specs	96
 lately	96
 hurry	96
-moisturizing	95
 la	95
 successfully	95
 promise	95
@@ -4536,6 +4537,7 @@ effortlessly	82
 tablespoon	82
 shred	82
 graters	82
+distribution	82
 crusts	82
 masher	82
 necessarily	81
@@ -4561,7 +4563,6 @@ silverware	81
 hood	81
 eliminates	81
 japan	81
-distribution	81
 science	80
 differences	80
 signals	80
@@ -4582,6 +4583,7 @@ synthetic	80
 w	80
 grainy	80
 fuzzy	80
+equivalent	80
 magnesium	80
 acrylic	80
 scroll	80
@@ -4609,7 +4611,6 @@ wondered	79
 sheer	79
 stoneware	79
 boiler	79
-equivalent	79
 exist	79
 arcade	79
 barking	79
@@ -5155,6 +5156,7 @@ bosses	64
 raspberry	64
 tweezers	64
 projects	64
+lipstick	64
 experiencing	64
 potentially	64
 washings	64
@@ -5205,7 +5207,6 @@ couch	63
 recommending	63
 buildings	63
 finds	63
-lipstick	63
 california	63
 secured	63
 suggests	63
@@ -5541,6 +5542,7 @@ decaf	57
 nephew	57
 plunge	57
 sunflower	57
+bling	57
 varying	57
 lying	57
 stretchy	57
@@ -5611,7 +5613,6 @@ freak	56
 impress	56
 applesauce	56
 wrench	56
-bling	56
 object	56
 squeak	56
 hurting	56
@@ -6271,6 +6272,7 @@ recorded	46
 smelly	46
 studies	46
 creatures	46
+nt	46
 repurchase	46
 optional	46
 partner	46
@@ -6296,6 +6298,7 @@ controlling	46
 incase	46
 kudos	46
 coleman	46
+rocker	46
 tipping	46
 propane	46
 misto	46
@@ -6344,7 +6347,6 @@ payed	45
 installs	45
 burst	45
 arent	45
-nt	45
 sufficiently	45
 sweeter	45
 corrected	45
@@ -6374,9 +6376,9 @@ squares	45
 whom	45
 reconnect	45
 fingerprint	45
-rocker	45
 overkill	45
 demand	45
+resting	45
 crepes	45
 drinkers	45
 boos	45
@@ -6447,7 +6449,6 @@ crowded	44
 intermittent	44
 qwerty	44
 hoses	44
-resting	44
 danger	44
 casseroles	44
 slicers	44
@@ -6625,6 +6626,7 @@ colour	42
 personality	42
 henckel	42
 rivets	42
+siri	42
 regrets	42
 recharges	42
 indispensable	42
@@ -6704,7 +6706,6 @@ scarlet	41
 sofa	41
 remarkable	41
 drippings	41
-siri	41
 ridge	40
 insult	40
 foul	40
@@ -6970,6 +6971,7 @@ trend	38
 scrap	38
 toasters	38
 ikea	38
+cobalt	38
 patties	38
 tablecloth	38
 scenario	37
@@ -7026,6 +7028,7 @@ yoga	37
 treatments	37
 dang	37
 understatement	37
+splurge	37
 crease	37
 clients	37
 redesigned	37
@@ -7061,6 +7064,7 @@ balm	37
 mike	37
 soccer	37
 inadequate	37
+smoothing	37
 fleece	37
 ge	37
 pristine	37
@@ -7089,7 +7093,6 @@ carafes	37
 scorching	37
 asparagus	37
 vacs	37
-cobalt	37
 representative	36
 heed	36
 homework	36
@@ -7132,7 +7135,6 @@ aids	36
 coolest	36
 beam	36
 sifter	36
-splurge	36
 torture	36
 purely	36
 revlon	36
@@ -7160,7 +7162,6 @@ prix	36
 calf	36
 experimented	36
 wifes	36
-smoothing	36
 insole	36
 accidents	36
 definetly	36
@@ -11538,6 +11539,7 @@ officially	14
 insect	14
 instincts	14
 duster	14
+execute	14
 assign	14
 meaningful	14
 bitten	14
@@ -11688,6 +11690,7 @@ clothesline	14
 inspiring	14
 smack	14
 gauges	14
+sandbox	14
 favorably	14
 bruised	14
 skirts	14
@@ -11959,7 +11962,6 @@ thule	13
 tornado	13
 maxtor	13
 whiter	13
-execute	13
 tumble	13
 tar	13
 wolf	13
@@ -12129,7 +12131,6 @@ shares	13
 warps	13
 pbs	13
 ken	13
-sandbox	13
 gelish	13
 timberland	13
 owed	13
@@ -15996,6 +15997,7 @@ reebok	7
 stutters	7
 oolong	7
 intestines	7
+mutes	7
 scrabble	7
 bonkers	7
 provision	7
@@ -16432,7 +16434,6 @@ persuaded	7
 wigwam	7
 pooh	7
 improvment	7
-don`t	7
 proficient	7
 intellimouse	7
 hardening	7
@@ -17194,7 +17195,6 @@ witness	6
 crawls	6
 trys	6
 meguiars	6
-mutes	6
 overlapping	6
 coffin	6
 publisher	6
@@ -18719,7 +18719,6 @@ pulpy	5
 intermittantly	5
 irked	5
 webs	5
-it`s	5
 bareminerals	5
 aimlessly	5
 celcius	5
@@ -19283,6 +19282,7 @@ bellies	5
 restrain	5
 penguins	5
 biolage	5
+arn	5
 hornady	5
 interchangeably	5
 ixl	5
@@ -20435,7 +20435,6 @@ prduct	4
 purport	4
 seized	4
 pixelation	4
-didn`t	4
 decaffeinated	4
 structured	4
 coghlan	4
@@ -20632,6 +20631,7 @@ scarcely	4
 colostrum	4
 hindrance	4
 adulterated	4
+juno	4
 irrigation	4
 molly	4
 iridescent	4
@@ -21293,7 +21293,6 @@ challange	4
 nestles	4
 radical	4
 orly	4
-arn	4
 directors	4
 alpine	4
 dissipating	4
@@ -23230,7 +23229,6 @@ spackle	3
 han	3
 aromasticks	3
 sovereign	3
-juno	3
 silva	3
 marten	3
 chaulky	3
@@ -23446,7 +23444,6 @@ cuba	3
 uncover	3
 blocker	3
 narrowing	3
-i`ve	3
 purported	3
 graphs	3
 lightbulb	3
@@ -24786,6 +24783,7 @@ bangle	3
 ontop	3
 luzianne	3
 squashing	3
+unyielding	3
 remnant	3
 tidbits	3
 dirtiest	3
@@ -25023,7 +25021,6 @@ blinded	3
 coolmax	3
 bain	3
 defatted	3
-i`m	3
 sedate	3
 fullest	3
 adhd	3
@@ -25590,7 +25587,6 @@ enclose	3
 humidifer	3
 margarita	3
 dorms	3
-`n	3
 fabricated	3
 dannon	3
 sirius	3
@@ -29096,7 +29092,6 @@ horray	2
 mucus	2
 yardage	2
 kahu	2
-`	2
 exasperating	2
 clench	2
 antonio	2
@@ -29635,6 +29630,7 @@ duvet	2
 snowcones	2
 backspace	2
 transposed	2
+synergistic	2
 mischief	2
 confidential	2
 gospel	2
@@ -30012,7 +30008,6 @@ attractions	2
 interim	2
 lossen	2
 nicknamed	2
-can`t	2
 atempt	2
 baseset	2
 cumbersom	2
@@ -31003,7 +30998,6 @@ jamba	2
 discounter	2
 transactions	2
 inter	2
-unyielding	2
 clp	2
 shearling	2
 exicited	2
@@ -31096,7 +31090,6 @@ utencils	2
 mislabeling	2
 adaptation	2
 spirited	2
-doesn`t	2
 gots	2
 shures	2
 erroneously	2
@@ -32583,8 +32576,8 @@ plsced	2
 fasy	2
 reasonalbe	2
 100	2
-'ll	2
 'd	2
+'ll	2
 1	2
 '	2
 bridged	1
@@ -33304,7 +33297,6 @@ hydrolysis	1
 masseuse	1
 someglove	1
 sisley	1
-`vitamin	1
 antiviral	1
 antitoxin	1
 lilliputian	1
@@ -33774,7 +33766,6 @@ baaad	1
 auf	1
 botle	1
 kano	1
-`rock	1
 lige	1
 goldeneyeso	1
 popww	1
@@ -33954,7 +33945,6 @@ birthstone	1
 farenheit	1
 bec	1
 beltbuckles	1
-`bike	1
 jaques	1
 reisistance	1
 sak	1
@@ -34096,7 +34086,6 @@ radiotime	1
 unpolluted	1
 istem	1
 unburned	1
-jack`s	1
 sensetive	1
 acrobats	1
 bwuahahahha	1
@@ -34612,7 +34601,6 @@ gamemade	1
 commentaries	1
 frowning	1
 jerkythat	1
-`remove	1
 distroys	1
 colin	1
 redialling	1
@@ -34732,7 +34720,6 @@ waterers	1
 reconvert	1
 organisims	1
 presario	1
-couldn`t	1
 thermoscan	1
 missionbeauty	1
 calico	1
@@ -35038,7 +35025,6 @@ stufffrom	1
 insuuficient	1
 assmebling	1
 enrobed	1
-`she	1
 komart	1
 inexpensiveness	1
 blutekusa	1
@@ -35049,7 +35035,6 @@ lookingfor	1
 annovulatory	1
 atfs	1
 risebars	1
-`perfect	1
 powerflop	1
 sssslllllooooowwwws	1
 sadaf	1
@@ -35241,7 +35226,7 @@ adverstises	1
 pregnate	1
 cougar	1
 combact	1
-`quelf	1
+quelf	1
 listneing	1
 gangsta	1
 snowed	1
@@ -36325,7 +36310,6 @@ fetid	1
 squamous	1
 leavs	1
 mentholatum	1
-`juno	1
 relife	1
 thmeselves	1
 equivelant	1
@@ -36845,7 +36829,6 @@ fistful	1
 wouldlike	1
 originalsthese	1
 overeasily	1
-`age	1
 motorolo	1
 carmack	1
 coudl	1
@@ -37738,7 +37721,6 @@ witou	1
 telex	1
 storyteller	1
 starett	1
-`execute	1
 ivf	1
 bootcamp	1
 zippier	1
@@ -38527,7 +38509,6 @@ unspeakably	1
 netopia	1
 geta	1
 tophe	1
-`distribution	1
 forsee	1
 impressionable	1
 untied	1
@@ -38630,7 +38611,6 @@ innate	1
 thdn	1
 bandwagons	1
 winging	1
-`even	1
 inticing	1
 astaxanthin	1
 lessens	1
@@ -38971,7 +38951,6 @@ deadening	1
 nutristart	1
 transient	1
 liveview	1
-`is	1
 ricocheting	1
 wattages	1
 devoce	1
@@ -39184,7 +39163,6 @@ scribbles	1
 buuut	1
 mira	1
 tieing	1
-`em	1
 multicam	1
 ambootia	1
 darjeeling	1
@@ -39214,7 +39192,6 @@ soloho	1
 beligerent	1
 belittling	1
 machingun	1
-`working	1
 sinnamon	1
 llife	1
 astromaster	1
@@ -40452,7 +40429,6 @@ weepers	1
 vitatops	1
 baserunners	1
 earbags	1
-else`s	1
 heyday	1
 fotouch	1
 pictuce	1
@@ -41032,7 +41008,6 @@ aggirvated	1
 wu	1
 tongsthese	1
 dreamy	1
-`holding	1
 hereditary	1
 itlsef	1
 resewing	1
@@ -41400,7 +41375,6 @@ tics	1
 fidgeting	1
 usu	1
 realmedia	1
-`equivalent	1
 goupey	1
 buries	1
 minutiae	1
@@ -41533,7 +41507,6 @@ pth	1
 hotshoe	1
 rattlers	1
 nfsu	1
-weren`t	1
 headtube	1
 speculates	1
 consummate	1
@@ -41690,8 +41663,6 @@ vertict	1
 gauranteed	1
 thatwas	1
 denamarin	1
-`chocolate	1
-`thing	1
 workso	1
 moneythank	1
 reciver	1
@@ -41880,7 +41851,6 @@ glominerals	1
 matthew	1
 sai	1
 smallerl	1
-`sandbox	1
 turquois	1
 thisstainless	1
 troubleshot	1
@@ -41941,7 +41911,6 @@ ungreatful	1
 loath	1
 roth	1
 tempurpedic	1
-`synergistic	1
 conatcted	1
 nonintuitive	1
 addictiveness	1
@@ -43002,10 +42971,6 @@ calliber	1
 yagis	1
 macona	1
 seeler	1
-`moisturizing	1
-`smoothing	1
-`extra	1
-synergistic	1
 druids	1
 tweed	1
 outwareds	1
@@ -43068,7 +43033,6 @@ paraiah	1
 brocery	1
 cassidyi	1
 buttholes	1
-`final	1
 favoriteomg	1
 ute	1
 ammuno	1
@@ -43108,7 +43072,7 @@ dissolver	1
 coi	1
 swaddling	1
 ostrim	1
-moneydon`t	1
+moneydon	1
 tytnii	1
 youtubers	1
 affirmations	1
@@ -43188,7 +43152,6 @@ wolff	1
 orthodics	1
 rlmif	1
 youplease	1
-let`s	1
 accentuating	1
 indiscernible	1
 millenia	1
@@ -43321,7 +43284,6 @@ repititive	1
 scourning	1
 appetites	1
 wheapons	1
-`fix	1
 bodyguard	1
 agriffin	1
 smartphonesbut	1
@@ -43343,7 +43305,6 @@ narcotic	1
 hallucinations	1
 advertisments	1
 throwng	1
-`unyielding	1
 viral	1
 similarpanasonic	1
 rejuice	1
@@ -44162,7 +44123,6 @@ weear	1
 didve	1
 cortous	1
 rive	1
-`m	1
 preventive	1
 paediatrician	1
 infantile	1
@@ -44213,7 +44173,6 @@ serenity	1
 conjuring	1
 shutff	1
 miners	1
-`chemicals	1
 deploys	1
 spint	1
 disuaded	1
@@ -44752,7 +44711,6 @@ trudging	1
 speeks	1
 veitnam	1
 whitman	1
-`moderate	1
 vertial	1
 reenact	1
 bodyfat	1
@@ -45209,7 +45167,6 @@ andordered	1
 liffey	1
 tte	1
 knicked	1
-`staying	1
 oversall	1
 requieres	1
 petted	1
@@ -45319,7 +45276,6 @@ nutracal	1
 orbites	1
 complied	1
 coccydia	1
-`no	1
 kennebunkport	1
 blockish	1
 pistrol	1
@@ -45862,7 +45818,6 @@ unoperaterable	1
 qualiity	1
 sublux	1
 turbinado	1
-i`ll	1
 bluescreens	1
 attune	1
 constitutions	1
@@ -45947,7 +45902,6 @@ licencse	1
 superflash	1
 manfacture	1
 earners	1
-`normal	1
 unbrick	1
 foriegn	1
 tiping	1
@@ -46280,7 +46234,6 @@ uc	1
 adamant	1
 restructure	1
 schuster	1
-`it	1
 erectile	1
 yourslef	1
 repell	1
@@ -46624,7 +46577,6 @@ nightware	1
 smacka	1
 comedic	1
 simmular	1
-`die	1
 bjj	1
 monthy	1
 blanked	1
@@ -46968,7 +46920,6 @@ kegals	1
 pelvic	1
 populations	1
 supershot	1
-`reduce	1
 suncloud	1
 bidget	1
 impartially	1
@@ -47086,7 +47037,6 @@ tetsugen	1
 nydj	1
 aerosoles	1
 rainbox	1
-does`nt	1
 scence	1
 anxietys	1
 territorial	1
@@ -48096,7 +48046,6 @@ blindsided	1
 spectaculaire	1
 warnedbuy	1
 encoding	1
-`hat	1
 featureless	1
 stratocaster	1
 zaxxon	1
@@ -48493,7 +48442,6 @@ constructionwasn	1
 intermitment	1
 autoran	1
 grandparent	1
-`chicago	1
 chota	1
 dewy	1
 diappointing	1
@@ -48601,7 +48549,6 @@ downwardly	1
 adry	1
 racconto	1
 intertwine	1
-baby`s	1
 wowwwww	1
 marley	1
 girthed	1
@@ -48650,7 +48597,6 @@ disodium	1
 whathad	1
 pursuaded	1
 courseness	1
-`before	1
 nickeled	1
 dimed	1
 pavonia	1
@@ -48659,7 +48605,6 @@ equalizers	1
 tropiclean	1
 tempertures	1
 caltrops	1
-that`s	1
 whiped	1
 vichy	1
 cancun	1
@@ -49090,7 +49035,6 @@ ichatusbcam	1
 ichatav	1
 tougue	1
 blase	1
-arn`t	1
 starr	1
 beriner	1
 butafter	1
@@ -49760,7 +49704,6 @@ streching	1
 brocholi	1
 titaniums	1
 mazzola	1
-`splurge	1
 rh	1
 smartbargains	1
 signifantly	1
@@ -49880,7 +49823,6 @@ ibuds	1
 leavethe	1
 pyrexware	1
 underhangs	1
-`voice	1
 tadgz	1
 unskinned	1
 ceremic	1
@@ -50362,7 +50304,6 @@ themap	1
 zooy	1
 affaid	1
 benrinner	1
-`siri	1
 botching	1
 proce	1
 veraitle	1
@@ -50593,7 +50534,6 @@ borax	1
 sangsum	1
 alwys	1
 harvesting	1
-`good	1
 servant	1
 wowzers	1
 expressly	1
@@ -50673,7 +50613,7 @@ voiceprompts	1
 detriments	1
 puttingthings	1
 basso	1
-`joooooooe	1
+joooooooe	1
 pastamaker	1
 inquires	1
 nothng	1
@@ -50728,7 +50668,6 @@ daintily	1
 hawling	1
 cardsandisk	1
 sdsdq	1
-`bling	1
 ucky	1
 endtable	1
 vulcanization	1
@@ -50770,7 +50709,6 @@ hemispherical	1
 skillett	1
 surprisinglky	1
 janitor	1
-`resting	1
 paparazzi	1
 mostley	1
 bonanza	1
@@ -51386,7 +51324,6 @@ frivalous	1
 circumferences	1
 vases	1
 capaciousness	1
-`universal	1
 inlcuded	1
 epcot	1
 mchn	1
@@ -51531,7 +51468,6 @@ qucikly	1
 itseems	1
 crumbliness	1
 cudos	1
-holiday`s	1
 ido	1
 grea	1
 meile	1
@@ -51798,7 +51734,6 @@ aberrant	1
 lido	1
 agloves	1
 incarnations	1
-`test	1
 thatdoes	1
 wrights	1
 synchronizing	1
@@ -51934,7 +51869,7 @@ melamie	1
 happpen	1
 apophis	1
 serpent	1
-`stiction	1
+stiction	1
 abstinence	1
 paiella	1
 scrylic	1
@@ -51970,7 +51905,6 @@ downlink	1
 disallows	1
 differend	1
 thyey	1
-`colors	1
 rasied	1
 openeing	1
 epast	1
@@ -52476,14 +52410,11 @@ launders	1
 maybedoing	1
 cordoroy	1
 purchaseto	1
-`answer	1
-`ignore	1
 thatevery	1
 alluminum	1
 satsified	1
 potental	1
 complan	1
-`needs	1
 tombstone	1
 daughterr	1
 coking	1
@@ -52990,7 +52921,6 @@ welland	1
 theperson	1
 updatestill	1
 versamail	1
-`touch	1
 rumcake	1
 cobolt	1
 arcticsound	1
@@ -53297,7 +53227,6 @@ robles	1
 colorwave	1
 offce	1
 dainties	1
-`root	1
 khol	1
 amphetamines	1
 mouch	1
@@ -54508,8 +54437,6 @@ mst	1
 incompatable	1
 nonstandard	1
 laserpointer	1
-`settings	1
-`plantronics	1
 drats	1
 distill	1
 succes	1
@@ -54659,7 +54586,6 @@ gonner	1
 fireguard	1
 xox	1
 connie	1
-`cobalt	1
 logde	1
 duz	1
 thivk	1
@@ -55011,7 +54937,6 @@ emties	1
 wastebin	1
 bbecame	1
 machinato	1
-`west	1
 stepladder	1
 appendectomy	1
 plusing	1
@@ -55507,7 +55432,6 @@ appended	1
 concentate	1
 duch	1
 storagev	1
-`french	1
 andonly	1
 parma	1
 itemsmall	1
@@ -55546,7 +55470,6 @@ reative	1
 sizzler	1
 awol	1
 sftrash	1
-`mutes	1
 beardi	1
 producut	1
 evvveerrrr	1
@@ -56065,7 +55988,6 @@ goaly	1
 multitimer	1
 predrilled	1
 adapterworks	1
-`lipstick	1
 goodiocity	1
 retest	1
 lifehave	1
@@ -56496,7 +56418,6 @@ thisunit	1
 jamwbone	1
 nester	1
 iheartradio	1
-here`s	1
 producedit	1
 balancer	1
 shoild	1
@@ -56803,7 +56724,6 @@ epicurian	1
 firey	1
 holdind	1
 stackers	1
-`u	1
 batterfy	1
 supposely	1
 attachmentscons	1
@@ -57595,11 +57515,9 @@ trialing	1
 obsorbs	1
 oders	1
 theessentials	1
-`finish	1
 adonit	1
 durablitly	1
 rams	1
-`stainless	1
 +static	1
 aircondition	1
 ckeaning	1
@@ -57751,7 +57669,6 @@ radish	1
 styus	1
 filiter	1
 knoves	1
-`allowed	1
 cyclones	1
 fantoms	1
 noncork	1
@@ -58084,7 +58001,6 @@ unagi	1
 micorwave	1
 neutrally	1
 noshes	1
-`need	1
 skydrive	1
 scarve	1
 editlisten	1
@@ -58847,7 +58763,6 @@ theseeasy	1
 cleansaves	1
 timemakes	1
 easiermust	1
-`rocker	1
 oompf	1
 satech	1
 conserves	1
@@ -58980,16 +58895,16 @@ gismoz	1
 cconsidered	1
 raisers	1
 togo	1
-12	1
-offerssomething	1
 quenched	1
-all-purpose	1
+offerssomething	1
 tbed	1
-burdensome	1
+12	1
+all-purpose	1
 one-day	1
+burdensome	1
 pepperonis	1
 heddest	1
-begrudgingly	1
 i'mm	1
 inconclusive	1
 n/a	1
+begrudgingly	1
