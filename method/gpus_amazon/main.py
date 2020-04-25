@@ -53,7 +53,7 @@ parser.add_argument('--word_dropout', type=float, default=1.0)
 parser.add_argument('--embedding_dropout', type=float, default=0.5)
 parser.add_argument('--learning_rate', type=float, default=0.001)
 parser.add_argument('--label_size', type=int, default=1)
-
+parser.add_argument('--max_epoch', type=int, default=2)
 
 args = parser.parse_args()
 args.if_load_from_checkpoint = False
@@ -142,7 +142,7 @@ def train_iters(ae_model, dis_model):
     ae_criterion = get_cuda(LabelSmoothing(size=args.vocab_size, padding_idx=args.id_pad, smoothing=0.1),device)
     dis_criterion = nn.BCELoss(size_average=True)
 
-    for epoch in range(200):
+    for epoch in range(args.max_epoch):
         print('-' * 94)
         epoch_start_time = time.time()
         for it in range(train_data_loader.num_batch):
@@ -155,7 +155,7 @@ def train_iters(ae_model, dis_model):
 
             # Loss calculation
             loss_rec = ae_criterion(out.contiguous().view(-1, out.size(-1)),
-                                    tensor_tgt_y.contiguous().view(-1)) / tensor_ntokens.data
+                                    tensor_tgt_y.contiguous().view(-1)).mean() / tensor_ntokens.data
 
             ae_optimizer.optimizer.zero_grad()
 
@@ -165,7 +165,7 @@ def train_iters(ae_model, dis_model):
             # Classifier
             dis_lop = dis_model.forward(to_var(latent.clone()))
 
-            loss_dis = dis_criterion(dis_lop, tensor_labels)
+            loss_dis = dis_criterion(dis_lop, tensor_labels).mean()
 
             dis_optimizer.zero_grad()
             loss_dis.backward()
