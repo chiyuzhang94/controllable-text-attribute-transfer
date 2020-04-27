@@ -145,7 +145,7 @@ def train_iters(ae_model, dis_model):
             tensor_tgt_mask, tensor_ntokens = train_data_loader.next_batch()
 
             # Forward pass
-            latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask)
+            latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask,device)
 
             # Loss calculation
             loss_rec = ae_criterion(out.contiguous().view(-1, out.size(-1)),
@@ -215,7 +215,7 @@ def eval_iters(ae_model, dis_model):
         print(id2text_sentence(tensor_tgt_y[0], args.id_to_word))
         print("origin_labels", tensor_labels)
 
-        latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask)
+        latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask,device)
         generator_text = ae_model.greedy_decode(latent,
                                                 max_len=args.max_sequence_length,
                                                 start_id=args.id_bos, device = device)

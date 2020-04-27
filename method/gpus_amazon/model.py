@@ -225,7 +225,7 @@ class EncoderDecoder(nn.Module):
         # self.memory2latent = nn.Linear(self.model_size, self.latent_size)
         # self.latent2memory = nn.Linear(self.latent_size, self.model_size)
 
-    def forward(self, src, tgt, src_mask, tgt_mask):
+    def forward(self, src, tgt, src_mask, tgt_mask, device):
         """
         Take in and process masked src and target sequences.
         """
@@ -240,7 +240,7 @@ class EncoderDecoder(nn.Module):
         # latent = self.memory2latent(memory)
         # memory = self.latent2memory(latent)  # (batch_size, max_src_seq, d_model)
 
-        logit = self.decode(latent.unsqueeze(1), tgt, tgt_mask,device)  # (batch_size, max_tgt_seq, d_model)
+        logit = self.decode(latent.unsqueeze(1), tgt, tgt_mask, device)  # (batch_size, max_tgt_seq, d_model)
         prob = self.generator(logit)  # (batch_size, max_seq, vocab_size)
         return latent, prob
 
