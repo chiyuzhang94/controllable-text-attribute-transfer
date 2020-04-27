@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --time=96:00:00
+#SBATCH --time=1:00:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:2
 #SBATCH --mem=64G
 #SBATCH --job-name=amazon
 #SBATCH --output=amazon.out
@@ -13,4 +13,4 @@
 module load cuda cudnn
 source ~/py3.6/bin/activate
 
-python3 main2.py
+python3 main.py

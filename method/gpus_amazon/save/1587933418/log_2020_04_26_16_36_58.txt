@@ -1,0 +1,2 @@
+[2020-04-26 16:36:58]: Path: save/1587933418/ is created
+[2020-04-26 16:37:24]: Start train process.
