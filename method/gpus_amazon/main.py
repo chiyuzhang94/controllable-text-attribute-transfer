@@ -236,7 +236,7 @@ if __name__ == '__main__':
     preparation()
 
     if torch.cuda.is_available():
-    add_log('Found GPU')
+        add_log('Found GPU')
     # If GPU is availble, the model will train on GPU.
     if torch.cuda.is_available():
         device_ids = GPUtil.getAvailable(limit = 4)
@@ -282,4 +282,3 @@ if __name__ == '__main__':
     # eval_iters(ae_model, dis_model)
 
     print("Done!")
-
