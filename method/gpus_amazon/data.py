@@ -190,9 +190,9 @@ class non_pair_data_loader():
             batch_encoder_length, batch_decoder_length = pad_batch_seuqences(
                 item_sentences, self.id_bos, self.id_eos, self.id_unk, self.max_sequence_length, self.vocab_size,)
 
-            src = torch.tensor(batch_encoder_input, dtype=torch.long),device
-            tgt = torch.tensor(batch_decoder_input, dtype=torch.long),device
-            tgt_y = torch.tensor(batch_decoder_target, dtype=torch.long),device
+            src = torch.tensor(batch_encoder_input, dtype=torch.long)
+            tgt = torch.tensor(batch_decoder_input, dtype=torch.long)
+            tgt_y = torch.tensor(batch_decoder_target, dtype=torch.long)
 
             src_mask = (src != 0).unsqueeze(-2)
             tgt_mask = self.make_std_mask(tgt, 0)
