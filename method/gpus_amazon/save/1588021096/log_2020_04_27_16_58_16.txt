@@ -1,0 +1,9 @@
+[2020-04-27 16:58:16]: Path: save/1588021096/ is created
+[2020-04-27 16:59:18]: Found GPU
+[2020-04-27 16:59:18]: work start
+[2020-04-27 16:59:18]: get model
+[2020-04-27 16:59:18]: use more gpus
+[2020-04-27 16:59:27]: send to gpus
+[2020-04-27 16:59:27]: start training
+[2020-04-27 16:59:27]: load data
+[2020-04-27 16:59:46]: Start train process.
