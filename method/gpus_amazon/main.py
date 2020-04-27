@@ -144,6 +144,13 @@ def train_iters(ae_model, dis_model):
             tensor_src, tensor_src_mask, tensor_tgt, tensor_tgt_y, \
             tensor_tgt_mask, tensor_ntokens = train_data_loader.next_batch()
 
+
+            tensor_labels = tensor_labels.to(device)
+            tensor_src = tensor_src.to(device)
+            tensor_src_mask = tensor_src_mask.to(device)
+            tensor_tgt = tensor_tgt.to(device)
+            tensor_tgt_y = tensor_tgt_y.to(device)
+            tensor_tgt_mask = tensor_tgt_mask.to(device)
             # Forward pass
             latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask,device)
 
@@ -240,6 +247,7 @@ if __name__ == '__main__':
     # If GPU is availble, the model will train on GPU.
     if torch.cuda.is_available():
         device_ids = GPUtil.getAvailable(limit = 4)
+        print("device_ids",device_ids)
 
     global device
     device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")

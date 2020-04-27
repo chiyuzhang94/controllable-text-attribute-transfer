@@ -190,9 +190,9 @@ class non_pair_data_loader():
             batch_encoder_length, batch_decoder_length = pad_batch_seuqences(
                 item_sentences, self.id_bos, self.id_eos, self.id_unk, self.max_sequence_length, self.vocab_size,)
 
-            src = get_cuda(torch.tensor(batch_encoder_input, dtype=torch.long),device)
-            tgt = get_cuda(torch.tensor(batch_decoder_input, dtype=torch.long),device)
-            tgt_y = get_cuda(torch.tensor(batch_decoder_target, dtype=torch.long),device)
+            src = torch.tensor(batch_encoder_input, dtype=torch.long),device
+            tgt = torch.tensor(batch_decoder_input, dtype=torch.long),device
+            tgt_y = torch.tensor(batch_decoder_target, dtype=torch.long),device
 
             src_mask = (src != 0).unsqueeze(-2)
             tgt_mask = self.make_std_mask(tgt, 0)
@@ -212,7 +212,7 @@ class non_pair_data_loader():
             # input("--------------")
 
             self.sentences_batches.append(item_sentences)
-            self.labels_batches.append(get_cuda(torch.tensor(item_labels, dtype=torch.float),device))
+            self.labels_batches.append(torch.tensor(item_labels, dtype=torch.float))
             self.src_batches.append(src)
             self.tgt_batches.append(tgt)
             self.tgt_y_batches.append(tgt_y)
