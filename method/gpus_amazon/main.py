@@ -19,7 +19,7 @@ from model import make_model, Classifier, NoamOpt, LabelSmoothing, fgim_attack
 from data import prepare_data, non_pair_data_loader, get_cuda, pad_batch_seuqences, load_human_answer,\
     id2text_sentence, to_var, calc_bleu
 
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+# os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 # os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 ######################################################################################
@@ -58,13 +58,6 @@ parser.add_argument('--max_epoch', type=int, default=2)
 args = parser.parse_args()
 args.if_load_from_checkpoint = False
 
-if torch.cuda.is_available():
-    print('Found GPU')
-# If GPU is availble, the model will train on GPU.
-if torch.cuda.is_available():
-    device_ids = GPUtil.getAvailable(limit = 4)
-global device
-device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
 # args.if_load_from_checkpoint = True
 # args.checkpoint_name = "1557668663"
 
@@ -130,6 +123,7 @@ def train_iters(ae_model, dis_model):
         id_eos=args.id_eos, id_unk=args.id_unk,
         max_sequence_length=args.max_sequence_length, vocab_size=args.vocab_size
     )
+    add_log("load data")
     train_data_loader.create_batches(args.train_file_list, args.train_label_list, device, if_shuffle=True)
     add_log("Start train process.")
     ae_model.train()
@@ -240,8 +234,17 @@ def eval_iters(ae_model, dis_model):
 
 if __name__ == '__main__':
     preparation()
-    # device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
 
+    if torch.cuda.is_available():
+    add_log('Found GPU')
+    # If GPU is availble, the model will train on GPU.
+    if torch.cuda.is_available():
+        device_ids = GPUtil.getAvailable(limit = 4)
+
+    global device
+    device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
+    # device = torch.device("cuda:"+str(device_ids[0])+"" if torch.cuda.is_available() else "cpu")
+    add_log("work start")
     ae_model = make_model(d_vocab=args.vocab_size,
                                    N=args.num_layers_AE,
                                    d_model=args.transformer_model_size,
@@ -249,14 +252,14 @@ if __name__ == '__main__':
                                    d_ff=args.transformer_ff_size,
     )
     dis_model = Classifier(latent_size=args.latent_size, output_size=args.label_size)
-
+    add_log('get model')
+    
     if torch.cuda.is_available():
         if torch.cuda.device_count() == 1:
             ae_model = ae_model.to(device)
             dis_model = dis_model.to(device)
         else:
-            print("more gpus")
-            device_ids = GPUtil.getAvailable(limit = 4)
+            add_log("use more gpus")
             torch.backends.cudnn.benchmark = True
             ae_model = ae_model.to(device)
             ae_model = nn.DataParallel(ae_model, device_ids=device_ids)
@@ -266,15 +269,17 @@ if __name__ == '__main__':
     else:
         ae_model = ae_model
         dis_model = dis_model
+    add_log("send to gpus")
 
     if args.if_load_from_checkpoint:
         # Load models' params from checkpoint
         ae_model.load_state_dict(torch.load(args.current_save_path + 'ae_model_params.pkl'))
         dis_model.load_state_dict(torch.load(args.current_save_path + 'dis_model_params.pkl'))
     else:
+        add_log("start training")
         train_iters(ae_model, dis_model)
 
-    eval_iters(ae_model, dis_model)
+    # eval_iters(ae_model, dis_model)
 
     print("Done!")
 
