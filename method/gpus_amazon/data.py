@@ -29,10 +29,6 @@ def load_human_answer(data_path):
     return ans
 
 
-
-
-
-
 def subsequent_mask(size):
     "Mask out subsequent positions."
     attn_shape = (1, size, size)
