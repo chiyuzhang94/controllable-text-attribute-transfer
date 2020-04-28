@@ -251,7 +251,7 @@ class EncoderDecoder(nn.Module):
 
     def decode(self, memory, tgt, tgt_mask, device):
         # memory: (batch_size, 1, d_model)
-        src_mask = get_cuda(torch.ones(memory.size(0), 1, 1).long(),device)
+        src_mask = get_cuda(torch.ones(tgt.size(0), 1, 1).long(),device)
         # print("src_mask here", src_mask)
         # print("src_mask", src_mask.size())
         return self.decoder(self.tgt_embed(tgt), memory, src_mask, tgt_mask)
