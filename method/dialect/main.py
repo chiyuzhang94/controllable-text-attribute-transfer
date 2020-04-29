@@ -41,7 +41,7 @@ parser.add_argument('--data_path', type=str, default='', help='')
 ######################################################################################
 #  Model parameters
 ######################################################################################
-parser.add_argument('--word_dict_max_num', type=int, default=5, help='')
+parser.add_argument('--word_dict_min_freq', type=int, default=5, help='')
 parser.add_argument('--batch_size', type=int, default=128, help='')
 parser.add_argument('--max_sequence_length', type=int, default=60)
 parser.add_argument('--num_layers_AE', type=int, default=2)
@@ -114,7 +114,7 @@ def preparation():
     # prepare data
     args.id_to_word, args.vocab_size, \
     args.train_file_list, args.train_label_list = prepare_data(
-        data_path=args.data_path, max_num=args.word_dict_max_num, task_type=args.task
+        data_path=args.data_path, max_num=args.word_dict_min_freq, task_type=args.task
     )
     return
 
