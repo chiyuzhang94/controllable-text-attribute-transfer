@@ -2,3 +2,69 @@
 Due to MODULEPATH changes, the following have been reloaded:
   1) openmpi/3.1.2
 
+/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/_reduction.py:43: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/_reduction.py:43: UserWarning: size_average and reduce args will be deprecated, please use reduction='mean' instead.
+  warnings.warn(warning.format(ret))
+create new model save path: 1588036706
+create log file at path: save/1588036706/log_2020_04_27_21_18_26.txt
+[2020-04-27 21:18:26]: Path: save/1588036706/ is created
+prepare data ...
+Load word-dict with 19724 size and 5 max_num.
+[2020-04-27 21:19:11]: Found GPU
+device_ids [0, 1]
+[2020-04-27 21:19:11]: work start
+[2020-04-27 21:19:12]: get model
+[2020-04-27 21:19:12]: use more gpus
+[2020-04-27 21:19:20]: send to gpus
+[2020-04-27 21:19:20]: start training
+[2020-04-27 21:19:20]: load data
+Load data from ../../data/amazon/processed_files/sentiment.train.0 ../../data/amazon/processed_files/sentiment.train.1 ../../data/amazon/processed_files/sentiment.dev.0 ../../data/amazon/processed_files/sentiment.dev.1 !
+Create 4351 batches with 128 batch_size
+[2020-04-27 21:19:41]: Start train process.
+----------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "main.py", line 288, in <module>
+    train_iters(ae_model, dis_model)
+  File "main.py", line 155, in train_iters
+    latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask,device)
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 152, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 162, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 85, in parallel_apply
+    output.reraise()
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/_utils.py", line 394, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 1 on device 1.
+Original Traceback (most recent call last):
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 60, in _worker
+    output = module(*input, **kwargs)
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 243, in forward
+    logit = self.decode(latent.unsqueeze(1), tgt, tgt_mask, device)  # (batch_size, max_tgt_seq, d_model)
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 257, in decode
+    return self.decoder(self.tgt_embed(tgt), memory, src_mask, tgt_mask)
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 175, in forward
+    x = layer(x, memory, src_mask, tgt_mask)
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 194, in forward
+    x = self.sublayer[1](x, lambda x: self.src_attn(x, m, m, src_mask))
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 122, in forward
+    return x + self.dropout(sublayer(self.norm(x)))
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 194, in <lambda>
+    x = self.sublayer[1](x, lambda x: self.src_attn(x, m, m, src_mask))
+  File "/home/chiyu94/py3.6/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 54, in forward
+    dropout=self.dropout)
+  File "/lustre04/scratch/chiyu94/controllable-text-attribute-transfer/method/gpus_amazon/model.py", line 22, in attention
+    scores = scores.masked_fill(mask == 0, -1e9)
+RuntimeError: arguments are located on different GPUs at /pytorch/aten/src/THC/generic/THCTensorMasked.cu:28
+

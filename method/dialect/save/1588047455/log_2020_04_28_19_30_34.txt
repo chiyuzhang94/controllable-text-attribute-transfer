@@ -1,0 +1,2 @@
+[2020-04-28 19:30:34]: Load checkpoint model from Path: save/1588047455/
+[2020-04-28 19:31:34]: Start eval process.
