@@ -426,10 +426,10 @@ def fgim_attack(model, origin_data, target, ae_model, max_sequence_length, id_bo
 
     dis_criterion = nn.BCELoss(size_average=True)
 
-    gold_text = id2text_sentence(gold_ans, id_to_word)
-    print("gold:", gold_text)
+#     gold_text = id2text_sentence(gold_ans, id_to_word)
+#     print("gold:", gold_text)
     # while True:
-    for epsilon in [2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0]:
+    for epsilon in [7.0, 8.0]:
         it = 0
         data = origin_data
         while True:
