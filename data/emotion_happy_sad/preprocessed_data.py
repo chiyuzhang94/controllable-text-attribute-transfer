@@ -60,7 +60,10 @@ def build_id_file():
                 id_list = []
                 for word in word_list:
                     word = word.lower()
-                    id = word_dict[word]
+                    if word in word_dict.keys():
+                        id = word_dict[word]
+                    else:
+                        id = word_dict['<UNK>']
                     id_list.append(id)
                 id_file_data.append(id_list)
         # write to file:
