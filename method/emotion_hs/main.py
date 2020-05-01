@@ -34,14 +34,14 @@ parser.add_argument('--id_eos', type=int, default=3, help='')
 ######################################################################################
 #  File parameters
 ######################################################################################
-parser.add_argument('--task', type=str, default='dialect', help='Specify datasets.')
+parser.add_argument('--task', type=str, default='emotion', help='Specify datasets.')   # revise
 parser.add_argument('--word_to_id_file', type=str, default='', help='')
 parser.add_argument('--data_path', type=str, default='', help='')
 
 ######################################################################################
 #  Model parameters
 ######################################################################################
-parser.add_argument('--word_dict_min_freq', type=int, default=5, help='')
+parser.add_argument('--word_dict_min_freq', type=int, default=5, help='')  # revise
 parser.add_argument('--batch_size', type=int, default=128, help='')
 parser.add_argument('--max_sequence_length', type=int, default=60)
 parser.add_argument('--num_layers_AE', type=int, default=2)
@@ -104,8 +104,8 @@ def preparation():
         args.data_path = '../../data/yelp/processed_files/'
     elif args.task == 'amazon':
         args.data_path = '../../data/amazon/processed_files/'
-    elif args.task == 'dialect':
-        args.data_path = '../../data/uae-eg/processed_files/'
+    elif args.task == 'emotion':                                            # revise
+        args.data_path = '../../data/emotion_happy_sad/processed_files/'   
     elif args.task == 'imagecaption':
         pass
     else:
@@ -185,53 +185,6 @@ def train_iters(ae_model, dis_model):
         torch.save(dis_model.state_dict(), args.current_save_path + 'dis_model_params.pkl')
     return
 
-def eval_iters(ae_model, dis_model):
-    eval_data_loader = non_pair_data_loader(
-        batch_size=1, id_bos=args.id_bos,
-        id_eos=args.id_eos, id_unk=args.id_unk,
-        max_sequence_length=args.max_sequence_length, vocab_size=args.vocab_size
-    )
-    eval_file_list = [
-        args.data_path + 'sentiment.test.0',
-        args.data_path + 'sentiment.test.1',
-    ]
-    eval_label_list = [
-        [0],
-        [1],
-    ]
-    eval_data_loader.create_batches(eval_file_list, eval_label_list, if_shuffle=False)
-    gold_ans = load_human_answer(args.data_path)
-    assert len(gold_ans) == eval_data_loader.num_batch
-
-
-    add_log("Start eval process.")
-    ae_model.eval()
-    dis_model.eval()
-    for it in range(eval_data_loader.num_batch):
-        batch_sentences, tensor_labels, \
-        tensor_src, tensor_src_mask, tensor_tgt, tensor_tgt_y, \
-        tensor_tgt_mask, tensor_ntokens = eval_data_loader.next_batch()
-
-        print("------------%d------------" % it)
-        print(id2text_sentence(tensor_tgt_y[0], args.id_to_word))
-        print("origin_labels", tensor_labels)
-
-        latent, out = ae_model.forward(tensor_src, tensor_tgt, tensor_src_mask, tensor_tgt_mask)
-        generator_text = ae_model.greedy_decode(latent,
-                                                max_len=args.max_sequence_length,
-                                                start_id=args.id_bos)
-        print(id2text_sentence(generator_text[0], args.id_to_word))
-
-        # Define target label
-        target = get_cuda(torch.tensor([[1.0]], dtype=torch.float))
-        if tensor_labels[0].item() > 0.5:
-            target = get_cuda(torch.tensor([[0.0]], dtype=torch.float))
-        print("target_labels", target)
-
-        modify_text = fgim_attack(dis_model, latent, target, ae_model, args.max_sequence_length, args.id_bos,
-                                        id2text_sentence, args.id_to_word, gold_ans[it])
-        add_output(modify_text)
-    return
 
 if __name__ == '__main__':
     preparation()

@@ -95,9 +95,9 @@ def prepare_data(data_path, max_num, task_type):
     # define train / test file
     train_file_list = []
     train_label_list = []
-    if task_type == 'dialect':
+    if task_type == 'emotion':   # revise
         train_file_list = [
-            data_path + 'dialect.uae', data_path + 'dialect.eg'
+            data_path + 'emotion.sad', data_path + 'emotion.happy'    # revise
         ]
         train_label_list = [
             [0],
@@ -295,6 +295,3 @@ if __name__ == '__main__':
             print(batch.trg_y)
             print(batch.trg_mask)
             input("=====")
-
-
-
